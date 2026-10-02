@@ -12,7 +12,7 @@ const actionBtns = [...document.querySelectorAll<HTMLButtonElement>("[data-actio
 let chosen: Action | null = null;
 let running = false;
 let last = 0;
-let ball = { x: 110, y: 170, vx: 190, vy: 0 };
+let ball = { x: 110, y: 100, vx: 220, vy: 0 };
 let plankX = 455;
 let plankAngle = -0.18;
 const gravity = 330;
@@ -31,7 +31,7 @@ function reset(message = "Goal: get the WHITE ball into GREEN. Change the GOLD p
   running = false;
   last = 0;
   chosen = null;
-  ball = { x: 110, y: 170, vx: 190, vy: 0 };
+  ball = { x: 110, y: 100, vx: 220, vy: 0 };
   applyChoice(null);
   actionBtns.forEach((button) => button.classList.remove("selected"));
   status.textContent = message;
@@ -167,7 +167,7 @@ runBtn.addEventListener("click", () => {
     return;
   }
 
-  ball = { x: 110, y: 170, vx: 190, vy: 0 };
+  ball = { x: 110, y: 100, vx: 220, vy: 0 };
   applyChoice(chosen);
   running = true;
   last = 0;
