@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rule Creature - Web Game Lab</title>
+</head>
+<body>
+  <main class="proto-shell">
+    <p class="eyebrow"><a href="/">WEB GAME LAB</a> / PROTOTYPE 02</p>
+    <h1>Rule Creature</h1>
+    <p class="tagline">You do not control it. You only decide what it does.</p>
+    <section class="rule-panel">
+      <div class="rule-picker">
+        <label><span>Rule 1</span><select id="rule1"></select></label>
+        <label><span>Rule 2</span><select id="rule2"></select></label>
+        <label><span>Rule 3</span><select id="rule3"></select></label>
+        <button id="run-rules" class="primary">Run</button>
+        <button id="reset-rules">Reset</button>
+      </div>
+      <div class="canvas-card">
+        <canvas id="rule-canvas" width="900" height="520"></canvas>
+        <p id="rule-status">Reach the green zone.</p>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/src/rule-creature.ts"></script>
+</body>
+</html>
