@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0e1017" />
+    <meta name="description" content="Shed: move by throwing pieces of yourself away." />
+    <title>Shed - Web Game Lab</title>
+  </head>
+  <body>
+    <main id="app">
+      <header class="hud">
+        <div>
+          <p class="eyebrow">WEB GAME LAB / PROTOTYPE 01</p>
+          <h1>Shed</h1>
+          <p class="tagline">Move by throwing pieces of yourself away.</p>
+        </div>
+        <div class="hud-right">
+          <span id="level-label">1 / 6</span>
+          <button id="restart" type="button">Restart</button>
+        </div>
+      </header>
+
+      <section class="stage-wrap" aria-label="Game">
+        <div id="stage"></div>
+        <div id="toast" class="toast" aria-live="polite"></div>
+        <div id="result" class="result hidden">
+          <p id="result-kicker" class="eyebrow"></p>
+          <h2 id="result-title"></h2>
+          <p id="result-copy"></p>
+          <div class="result-actions">
+            <button id="retry" type="button">Retry</button>
+            <button id="next" class="primary" type="button">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Tap a body piece to eject it.</span>
+        <span id="pieces-label">Pieces: 0</span>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
