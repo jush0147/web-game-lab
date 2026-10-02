@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Change - Web Game Lab</title>
+</head>
+<body>
+  <main class="proto-shell">
+    <p class="eyebrow"><a href="/">WEB GAME LAB</a> / PROTOTYPE 03</p>
+    <h1>One Change</h1>
+    <p class="tagline">The machine always fails. You may change exactly one thing.</p>
+    <section class="change-toolbar">
+      <button data-action="left">Move plank left</button>
+      <button data-action="right">Move plank right</button>
+      <button data-action="rotate">Rotate plank</button>
+      <button id="run-change" class="primary">Run</button>
+      <button id="reset-change">Reset</button>
+    </section>
+    <section class="canvas-card">
+      <canvas id="change-canvas" width="900" height="520"></canvas>
+      <p id="change-status">Pick exactly one change, then run the machine.</p>
+    </section>
+  </main>
+  <script type="module" src="/src/one-change.ts"></script>
+</body>
+</html>
