@@ -266,6 +266,8 @@ select {
   min-height: 48px;
 }
 
+.one-change-layout { margin-top: 1rem; }
+
 .change-toolbar {
   display: flex;
   gap: 0.65rem;
@@ -280,7 +282,7 @@ button.selected {
 
 @media (max-width: 820px) {
   .lab-shell, .proto-shell {
-    width: min(100% - 1rem, 720px);
+    width: min(calc(100% - 1rem), 720px);
     padding: 1rem 0 calc(1.5rem + env(safe-area-inset-bottom));
   }
 
